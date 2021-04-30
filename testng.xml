@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="TestListerner"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="AmazonScenarios">
+        <parameter name = "inputInvalidPincode" value="1234"/>
+        <parameter name = "inputValidPincode" value="695011"/>
+        <parameter name = "inputPhone" value="iPhone12"/>
+        <parameter name = "inputBookName" value="Da Vinci code"/>
+        <classes>
+            <class name="Amazon"></class>
+            <class name="Reports"></class>
+        </classes>
+    </test>
+</suite>
